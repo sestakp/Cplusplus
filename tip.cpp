@@ -1,3 +1,9 @@
+/*
+OWNER - Pavel Šesták
+
+github - www.github.com/alepir
+
+*/
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
