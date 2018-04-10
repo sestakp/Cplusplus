@@ -3,6 +3,7 @@ OWNER - Pavel Šesták
 
 github - www.github.com/alepir
 
+This is "game" in C++. You insert maximum generated integer and numbers of tries
 */
 #include <iostream>
 #include <cstdlib>
