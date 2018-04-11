@@ -1,4 +1,10 @@
-//prime numbers
+/*
+   program print prime numbers 
+   
+   Creator - Pavel Šesták
+   
+   github.com/alepir
+*/
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
