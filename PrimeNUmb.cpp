@@ -14,7 +14,7 @@ int main() {
    
    int n;
    cin >> n;
-   bool check = NULL;
+   bool check;
    
    for (int i=2; i <= n;i++)
    {
