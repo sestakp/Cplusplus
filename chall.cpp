@@ -3,7 +3,7 @@
 
     Challenge by Sololearn Forum
 
-    Owner - Pavel Šesták
+    Creator - Pavel Šesták
 
     Github.com/alepir
 */
