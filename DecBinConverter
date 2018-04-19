@@ -1,0 +1,88 @@
+/*
+    Creator: Pavel Šesták 
+    
+    github.com/alepir
+    
+    Program convert number from decimal to binary and back
+*/
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+long int result;
+int x;
+
+
+int Dec(int x)
+{
+    
+    int y = 0;
+    int n = x;
+    int result = 0;
+    int loop = 0;
+    
+    while (n != 0)
+    {
+        if (n % 2 == 1)
+        {
+            y = 0;
+            y += pow(2,loop);
+            result += y;
+        }
+        loop++;
+        n = trunc(n / 10);
+    }
+    return result;    
+}
+
+int Bin(int x)
+{
+    int y;
+    int n = x;
+    int count = -1;
+    while(n >= 1)
+    {
+        count++;
+        y = n%2;
+        n /= 2;   
+        for (int i = 1; i<= count;i++) y *= 10;     //set a position of Bin 
+        result += y;
+    }     
+    return result; 
+}
+
+
+int main() 
+{
+    cout << "---Program will convert your number from decimal to binary---"<<endl;
+    cout << "Choose the type of convert"<<endl;
+    cout << "[1] Decimal to binary"<<endl;
+    cout << "[2] Binary to decimal"<<endl;
+    cout << "Your choice: ";
+    cin >> x;
+    cin.get();
+
+    switch (x)
+    {
+        case 1:
+                cout << "Insert your nuber(decimal): ";
+                cin >> x;
+                result = Bin(x);
+                cout << endl<< "Binary number of "<<x<<" is: "<<result;
+                cin.get();
+                break;
+        case 2:
+                cout << "Insert your nuber(binary): ";
+                cin >> x;
+                result = Dec(x);
+                cout << endl<< "Decimal number of "<<x<<" is: "<<result;
+                cin.get();
+                break;
+        default: cout << "Bad choice, restart a application";
+    }  
+    
+    cin.get();
+	return 0;
+}
